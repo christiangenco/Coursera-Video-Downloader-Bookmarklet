@@ -13,7 +13,7 @@ The bookmarklet generates bash code that can be entered directly into the comman
     2. Segregation and Peer Effects/
     ...
 
-## Directions
+## Use
 
 1. <span id="step1" class="">Navigate to this project's [GitHub Page](http://christiangenco.github.com/Coursera-Video-Downloader-Bookmarklet#step2). ([Why?](#why_github_pages))</span>
 

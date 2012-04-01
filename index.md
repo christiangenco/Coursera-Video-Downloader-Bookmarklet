@@ -23,10 +23,10 @@ The bookmarklet generates bash code that can be entered directly into the comman
     2. Segregation and Peer Effects/
     ...
 
-## Directions
+## Use
 
 1. <span id="step1" class="">Navigate to this project's [GitHub Page](http://christiangenco.github.com/Coursera-Video-Downloader-Bookmarklet#step2). ([Why?](#why_github_pages))</span>
-* <a name="step2"></a>Drag and drop this bookmarklet to your bookmarks bar: <a href="javascript:((function()%7Bvar%20s%3Ddocument.createElement('script')%3Bs.setAttribute('type'%2C'text%2Fjavascript')%3Bs.setAttribute('charset'%2C'UTF-8')%3Bs.setAttribute('src'%2C%22https%3A%2F%2Fraw.github.com%2Fchristiangenco%2FCoursera-Video-Downloader-Bookmarklet%2Fmaster%2Fcoursera_downloader.js%22)%3Bdocument.documentElement.appendChild(s)%3B%7D)())">Coursera Downloader</a>.
+* <a name="step2"></a>Drag and drop this link to your bookmarks bar: <a href="javascript:((function()%7Bvar%20s%3Ddocument.createElement('script')%3Bs.setAttribute('type'%2C'text%2Fjavascript')%3Bs.setAttribute('charset'%2C'UTF-8')%3Bs.setAttribute('src'%2C%22https%3A%2F%2Fraw.github.com%2Fchristiangenco%2FCoursera-Video-Downloader-Bookmarklet%2Fmaster%2Fcoursera_downloader.js%22)%3Bdocument.documentElement.appendChild(s)%3B%7D)())">Coursera Downloader</a>.
    ![Bookmarklet](https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet/raw/master/screenshots/bookmarklet.png)
 * Navigate to the "Video Lectures" page of any Coursera course.
   ![Coursera Video Lectures](https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet/raw/master/screenshots/coursera_videos_page.png)
