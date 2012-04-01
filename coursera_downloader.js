@@ -48,7 +48,7 @@ function buildCommand(){
       cmd += 'curl -L -C - ' + cookieHeader + downloadLink + ' -o "' + filename + '"';
 
       if($(this).find(".multidownload").attr("checked"))
-        command += cmd + "\n";
+        command += cmd + "; ";
     });
   });
   $("#cmd").val(command);
