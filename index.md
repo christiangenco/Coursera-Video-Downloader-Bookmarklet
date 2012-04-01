@@ -1,9 +1,12 @@
 <style>
   img{display:block;}
+  .download img{display: inline;}
 .done{
   text-decoration: line-through;
 }
 </style>
+
+<a href="https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
 # Coursera Video Downloader Bookmarklet
 
@@ -39,20 +42,35 @@ The bookmarklet generates bash code that can be entered directly into the comman
 
 Your selected videos will now be downloaded with the `curl` utility and organized as described above.
 
-## Contact
-
-Suggestions are welcome! Please tweet your bugs or improvements to [@cgenco](http://twitter.com/cgenco).
-
 ## Notes
 
 <a name="why_github_pages"></a>*Why do I have to navigate to this project's [GitHub Page](http://christiangenco.github.com/Coursera-Video-Downloader-Bookmarklet) before installing the bookmark?*
 
-The markdown renderer on [this project's repo page](https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet) doesn't allow inline javascript, which is how the bookmark functions. GitHub pages allow this.
+The GitHub-flavored markdown renderer on [this project's repo page](https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet) doesn't allow inline javascript, which is how the bookmark functions, so the simple "drag-and-drop" into your bookmarks bar doesn't work. GitHub pages allow this.
+
+## Other Coursera Downloader Tools
+
+* [coursera-dl](https://github.com/jplehmann/coursera) by [jplehmann](https://github.com/jplehmann): "Script for downloading Coursera.org videos and naming them." (python)
+* [coursera_downloader.py](https://github.com/LoganDing/Coursera.org-Downloader) by [LoganDing](https://github.com/LoganDing/): "A python script to download lectures (videos and slides) from Cousera.org" (python)
 
 ## Acknowledgements
 
 This project is an expansion of [a gist](https://gist.github.com/1989008) by [csabapalfi](https://gist.github.com/csabapalfi).
 
+## Contact
+
+Suggestions are welcome! Please tweet your bugs or improvements to [@cgenco](http://twitter.com/cgenco).
+
+---
+
+Get the source code on GitHub: <a href="https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet">christiangenco/Coursera-Video-Downloader-Bookmarklet</a>
+
+<div class="download">
+  <a href="https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet/zipball/master">
+    <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
+  <a href="https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet/tarball/master">
+    <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
+</div>
 
 <script type="text/javascript">
 var e = document.getElementById("step1");
@@ -73,20 +91,3 @@ e.setAttribute("className", "done"); //For IE; harmless to other browsers.
   })();
 
 </script>
-
-<!-- <a href="https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-          get the source code on GitHub : <a href="https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet">christiangenco/Coursera-Video-Downloader-Bookmarklet</a>
-
- -->
-
-
