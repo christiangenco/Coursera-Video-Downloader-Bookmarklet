@@ -120,7 +120,7 @@ body{font-size:16px;}
   h2, h3 { page-break-after: avoid; }
 }</style><h1>Coursera Video Downloader Bookmarklet</h1>
 <p>This bookmarklet adds functionality to <a href="http://coursera.org">Coursera</a>'s Video Lectures page to download and organize multiple videos. </p>
-<p><img alt="Screenshot of the Coursera Video Downloader Bookmarklet" src="Coursera-Video-Downloader-Bookmarklet/raw/master/screenshot.png" /></p>
+<p><img alt="Screenshot of the Coursera Video Downloader Bookmarklet" src="https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet/raw/master/screenshots/coursera_videos_after_bookmarklet.png" /></p>
 <p>The bookmarklet generates bash code that can be entered directly into the command line and will download the selected videos sequentially. The videos are organized in the following structure:</p>
 <pre><code>1. Introduction - Why Model?/
    1. Why Model?.mp4
@@ -131,12 +131,21 @@ body{font-size:16px;}
 </code></pre>
 <h2>Directions</h2>
 <ol>
-<li>Create a new bookmark in your bookmarks bar and paste in the content of "bookmarklet.js" into its href value. Alternatively, some browsers support pasting this content into the navigation bar directly. Dragging and dropping this link seems to be broken on GitHub: <a href="javascript:((function()%7Bvar%20s%3Ddocument.createElement('script')%3Bs.setAttribute('type'%2C'text%2Fjavascript')%3Bs.setAttribute('charset'%2C'UTF-8')%3Bs.setAttribute('src'%2C%22https%3A%2F%2Fraw.github.com%2Fchristiangenco%2FCoursera-Video-Downloader-Bookmarklet%2Fmaster%2Fcoursera_downloader.js%22)%3Bdocument.documentElement.appendChild(s)%3B%7D)())">Coursera Downloader</a>.</li>
-<li>Navigate to the "Video Lectures" page of any Coursera course and click the bookmarklet in your bookmarks bar.</li>
+<li>Navigate to this project's <a href="http://christiangenco.github.com/Coursera-Video-Downloader-Bookmarklet">README on GitHub Pages</a>. <a href="">Why?</a> </li>
+<li>[step2] Drag and drop this bookmarklet to your bookmarks bar: <a href="javascript:((function()%7Bvar%20s%3Ddocument.createElement('script')%3Bs.setAttribute('type'%2C'text%2Fjavascript')%3Bs.setAttribute('charset'%2C'UTF-8')%3Bs.setAttribute('src'%2C%22https%3A%2F%2Fraw.github.com%2Fchristiangenco%2FCoursera-Video-Downloader-Bookmarklet%2Fmaster%2Fcoursera_downloader.js%22)%3Bdocument.documentElement.appendChild(s)%3B%7D)())">Coursera Downloader</a>.
+   <img alt="Bookmarklet" src="https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet/raw/master/screenshots/bookmarklet.png" /></li>
+<li>Navigate to the "Video Lectures" page of any Coursera course.
+  <img alt="Coursera Video Lectures" src="https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet/raw/master/screenshots/coursera_videos_page.png" /></li>
+<li>Click the bookmarklet in your bookmarks bar. This will add checkboxes to each video and a command output section at the top of the page.
+  <img alt="Coursera Video Lectures After Bookmarklet" src="https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet/raw/master/screenshots/coursera_videos_after_bookmarklet.png" /></li>
 <li>Select the videos you wish to download.</li>
-<li>"Select all" and "copy" the generated bash code in the text area near the top of the page.</li>
-<li>On your machine, open a terminal and navigate to the location you'd like your videos downloaded to.</li>
-<li>Paste the GIGANTIC command into your terminal and hit enter.</li>
+<li>"Select all" and "copy" the generated bash code in the text area near the top of the page.
+  <img alt="Copy Bash Code" src="https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet/raw/master/screenshots/copy_code.png" /></li>
+<li>On your machine, open a terminal and navigate to the location you'd like your videos downloaded to.
+  <img alt="cd to video download location" src="https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet/raw/master/screenshots/cd_to_folder.png" /></li>
+<li>Paste the GIGANTIC command into your terminal and hit enter.
+  <img alt="Past in generated code" src="https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet/raw/master/screenshots/terminal.png" /></li>
 </ol>
 <h2>Contact</h2>
 <p>Suggestions are welcome! Please tweet your bugs or improvements to <a href="http://twitter.com/cgenco">@cgenco</a>.</p>
+<h2>Notes</h2>
