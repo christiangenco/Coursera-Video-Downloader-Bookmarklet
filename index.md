@@ -32,7 +32,7 @@ The bookmarklet generates bash code that can be entered directly into the comman
   ![Coursera Video Lectures](https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet/raw/master/screenshots/coursera_videos_page.png)
 * Click the "Coursera Downloader" bookmarklet in your bookmarks bar. This will add checkboxes to each video and a command output section at the top of the page.
   ![Coursera Video Lectures After Bookmarklet](https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet/raw/master/screenshots/coursera_videos_after_bookmarklet.png)
-* Select the videos you wish to download.
+* <a name="select_all"></a> Select the videos you wish to download.
 * "Select all" and "copy" the generated bash code in the text area near the top of the page.
   ![Copy Bash Code](https://github.com/christiangenco/Coursera-Video-Downloader-Bookmarklet/raw/master/screenshots/copy_code.png)
 * On your machine, open a terminal and navigate to the location you'd like your videos downloaded to.
