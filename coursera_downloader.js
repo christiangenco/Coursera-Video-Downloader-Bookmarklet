@@ -28,6 +28,7 @@ function refreshSectionCheckmarks(){
     });
   });
 }
+refreshSectionCheckmarks();
 
 // the actual work of writing the command to download the checked videos
 function buildCommand(){
