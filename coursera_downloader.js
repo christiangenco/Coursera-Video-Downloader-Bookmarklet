@@ -1,5 +1,6 @@
 // insert the "Download All Selected" header and textarea
-$("h2").parent().after("<br><br><br><h3>Download All Selected</h3>Cut and paste this bash code into the command line. <a href='http://christiangenco.github.com/Coursera-Video-Downloader-Bookmarklet/#select_all' target='_blank'>How?</a><br><textarea id='cmd' rows='5'></textarea><br><br>")
+
+$("div#page-content > div.item_list").before("<br><br><br><h3>Download All Selected</h3>Cut and paste this bash code into the command line. <a href='http://christiangenco.github.com/Coursera-Video-Downloader-Bookmarklet/#select_all' target='_blank'>How?</a><br><textarea id='cmd' rows='5'></textarea><br><br>")
 
 // section selectors
 $("h3.list_header").prepend("<a data-placement='left' rel='twipsy' data-original-title='Include chapter in multi-download' style='margin-right:10px'><input type='checkbox' class='multidownload_chapter'></input></a>")
