@@ -39,12 +39,12 @@ function buildCommand(){
     $(this).parent().next().find("a.lecture-link").each(function(videoIndex){
       var $lectureLink = $(this);
       var videoName = $.trim($lectureLink.text());
-      var downloadLink = $lectureLink.attr('href').replace('/lecture/','/lecture/download.mp4');
+      var downloadLink = $lectureLink.attr('href').replace('/lecture/','/lecture/download.mp4?lecture_id=');
       var cookieHeader = ' --header \"Cookie:'+ document.cookie + '\" ';
       
       var directory = (sectionIndex+1) + '. ' + sectionName + '/';
       var filename = directory + (videoIndex+1) + '. ' + videoName + '.mp4';
-      filename = filename.replace("/","/");
+      filename = filename.replace("/","_");
       
       var cmd = 'echo "' + filename + '" && ';
       cmd += 'mkdir -p "' + directory + '" && ';
