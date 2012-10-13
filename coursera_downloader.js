@@ -44,6 +44,7 @@ function buildCommand(){
 
       var directory = (sectionIndex+1) + '. ' + sectionName + '/';
       var filename = directory + (videoIndex+1) + '. ' + videoName + '.mp4';
+      filename.replace(/\//g, '_');
       
       var cmd = 'echo "' + filename + '" && ';
       cmd += 'mkdir -p "' + directory + '" && ';
