@@ -38,7 +38,7 @@ function buildCommand(){
     var sectionName = $(this).text().replace(/Chapter .+ - /,"").replace(/\:/,'-').replace(/^(V|I|X)+\. /,'');
     $(this).parent().next().find("a.lecture-link").each(function(videoIndex){
       var $lectureLink = $(this);
-      var videoName = $.trim($lectureLink.text()).replace(/\/|:/g,"_");
+      var videoName = $.trim($lectureLink.text()).replace(/\/|:|"|!/g,"_");
       var downloadLink = $lectureLink.attr('href').replace('/lecture/','/lecture/download.mp4?lecture_id=');
       var cookieHeader = ' --header \"Cookie:'+ document.cookie.replace(/"/g,'\\"') + '\" ';
 
