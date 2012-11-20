@@ -33,6 +33,8 @@ refreshSectionCheckmarks();
 
 // the actual work of writing the command to download the checked videos
 function buildCommand(){
+  var cookieHeader = ' --header \"Cookie:'+ document.cookie.replace(/"/g,'\\"') + '\" ';
+  
   var command = "";
   $("h3.list_header").each(function(sectionIndex){
     var sectionName = $(this).text().replace(/Chapter .+ - /,"").replace(/\:/,'-').replace(/^(V|I|X)+\. /,'');
@@ -40,7 +42,6 @@ function buildCommand(){
       var $lectureLink = $(this);
       var videoName = $.trim($lectureLink.text()).replace(/\/|:/g,"_");
       var downloadLink = $lectureLink.attr('href').replace('/lecture/','/lecture/download.mp4?lecture_id=');
-      var cookieHeader = ' --header \"Cookie:'+ document.cookie.replace(/"/g,'\\"') + '\" ';
 
       var directory = (sectionIndex+1) + '. ' + sectionName + '/';
       var filename = directory + (videoIndex+1) + '. ' + videoName + '.mp4';
