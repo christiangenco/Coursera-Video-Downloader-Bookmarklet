@@ -1,0 +1,1 @@
+* move the cookie into an external file or variable
