@@ -3,7 +3,7 @@
 $("div#course-page-content div.course-item-list").before("<br><br><br><h3>Download All Selected</h3>Cut and paste this bash code into the command line. <a href='http://christiangenco.github.com/Coursera-Video-Downloader-Bookmarklet/#select_all' target='_blank'>How?</a><br><textarea id='cmd' rows='5'></textarea><br><br>")
 
 // section selectors
-$("h3.list_header").prepend("<a data-placement='left' rel='twipsy' data-original-title='Include chapter in multi-download' style='margin-right:10px'><input type='checkbox' class='multidownload_chapter'></input></a>")
+$("h3").prepend("<a data-placement='left' rel='twipsy' data-original-title='Include chapter in multi-download' style='margin-right:10px'><input type='checkbox' class='multidownload_chapter'></input></a>")
 
 // video selectors
 $(".lecture-link").prepend("<a data-placement='left' rel='twipsy' data-original-title='Include in multi-download'><input type='checkbox' class='multidownload'></input></a>")
@@ -34,7 +34,7 @@ refreshSectionCheckmarks();
 // the actual work of writing the command to download the checked videos
 function buildCommand(){
   var command = "";
-  $("h3.list_header").each(function(sectionIndex){
+  $("h3").each(function(sectionIndex){
     var sectionName = $(this).text().replace(/Chapter .+ - /,"").replace(/\:/,'-').replace(/^(V|I|X)+\. /,'');
     $(this).parent().next().find("a.lecture-link").each(function(videoIndex){
       var $lectureLink = $(this);
@@ -53,8 +53,9 @@ function buildCommand(){
       cmd += 'mkdir -p "' + directory + '" && ';
       cmd += 'curl -L -C - ' + cookieHeader + downloadLink + ' -o "' + filename + '"';
 
-      if($(this).find(".multidownload").attr("checked"))
+      if($(this).find(".multidownload").attr("checked")) {
         command += cmd + "; ";
+      }
     });
   });
   $("#cmd").val(command);
