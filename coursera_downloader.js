@@ -21,7 +21,7 @@ function refreshSectionCheckmarks(){
     var chapterCheckbox = $(this);
     chapterCheckbox.prop("checked", true);
 
-    $(this).parents(".list_header_link").next(".item_section_list").find(".multidownload").each(function(){
+    $(this).parents(".course-item-list-header").next(".course-item-list-section-list").find(".multidownload").each(function(){
       if(!$(this).attr("checked")){
         chapterCheckbox.prop("checked", false);
         return;
@@ -67,7 +67,7 @@ buildCommand();
 $(".multidownload_chapter").unbind();
 $(".multidownload_chapter").click(function(e) {
   var check = $(this).attr("checked") ? true : false;
-  $(this).parents(".list_header_link").next(".item_section_list").find(".multidownload").each(function(){
+  $(this).parents(".course-item-list-header").next(".course-item-list-section-list").find(".multidownload").each(function(){
     $(this).prop("checked", check);
     console.log(check);
   });
